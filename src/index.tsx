@@ -10,7 +10,7 @@ ReactDOM.render(
     <div className="container">
       < Header />
       <div className="content">
-
+asdf asdf
         <SideBar />
         <main className="hotel-view">
           <div className="gallery">
