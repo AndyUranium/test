@@ -53,7 +53,7 @@ import './index.scss';
         </li>
     </ul>
     <div className="legal">
-        &copy; 2021 by Mulder
+        &copy; 2021 by Thrillo
     </div>
 </nav>
 export default SideBar;
