@@ -1,6 +1,6 @@
 {
-  "homepage": "http://AndyUranium.github.io/test",
-  "name": "hotel",
+  "homepage": ".",
+   "name": "hotel",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
