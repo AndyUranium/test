@@ -1,0 +1,130 @@
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #ba265d;
+
+  --color-grey-light1: #faf9f9;
+  --color-grey-light2: #f4f2f2;
+  --color-grey-light3: #f0eeee;
+  --color-grey-light4: #ccc;
+
+  --color-grey-dark1: #333;
+  --color-grey-dark2: #777;
+  --color-grey-dark3: #999;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: var(--color-grey-dark2);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light2);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+}
+.hotel-view {
+}
+
+////////////////////////////////////
+//GALLERY
+.gallery {
+  display: flex;
+
+  &__item {
+  }
+  &__photo {
+    display: block;
+    height: 100%;
+
+    width: 100%;
+  }
+}
+
+//////////////////////////////////////////
+//OVERVIEW
+.overview {
+  display: flex;
+
+  border-bottom: 1px solid var(--color-grey-light1);
+  &__heading {
+    font-weight: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+  }
+
+  &-stars {
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+  }
+  &__icon-star {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--color-primary);
+  }
+  &__icon-location {
+    height: 2.75rem;
+    width: 2.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+  }
+
+  &__rating {
+    text-transform: uppercase;
+text-align: center;
+    margin-left: 2rem;
+     display: flex;
+    flex-direction: column;
+    padding:0 1rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    &-average {
+      // margin: auto;
+
+      font-size: 2.5rem;
+    }
+
+    &-count {
+      margin-bottom: -1rem;
+    }
+  }
+}
+
+.btn-inline {
+  background-color: transparent;
+  border: none;
+  color: var(--color-primary);
+}
